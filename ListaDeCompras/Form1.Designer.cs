@@ -63,7 +63,7 @@
             // LblNomeProduto
             // 
             this.LblNomeProduto.AutoSize = true;
-            this.LblNomeProduto.Location = new System.Drawing.Point(136, 211);
+            this.LblNomeProduto.Location = new System.Drawing.Point(136, 214);
             this.LblNomeProduto.Name = "LblNomeProduto";
             this.LblNomeProduto.Size = new System.Drawing.Size(127, 16);
             this.LblNomeProduto.TabIndex = 2;
@@ -71,19 +71,22 @@
             // 
             // txbprodutos
             // 
-            this.txbprodutos.Location = new System.Drawing.Point(139, 242);
+            this.txbprodutos.BackColor = System.Drawing.Color.White;
+            this.txbprodutos.Location = new System.Drawing.Point(139, 233);
             this.txbprodutos.Name = "txbprodutos";
             this.txbprodutos.Size = new System.Drawing.Size(158, 23);
             this.txbprodutos.TabIndex = 3;
+            this.txbprodutos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbprodutos_KeyDown);
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(139, 291);
+            this.btnAdicionar.Location = new System.Drawing.Point(139, 279);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(161, 36);
             this.btnAdicionar.TabIndex = 4;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // libCompras
             // 
@@ -102,6 +105,7 @@
             this.btnExcluir.TabIndex = 6;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -111,6 +115,7 @@
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar Lista";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
@@ -129,7 +134,7 @@
             this.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
